@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDustbin"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/TB_Add_Dustbin_Id"
+        layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="50dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/bin"/>
+
+        <TextView
+            android:id="@+id/TV_Bin_Value_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textSize="64sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginVertical="100dp"
+            android:padding="50dp">
+
+            <SeekBar
+                android:id="@+id/SB_Garbage_Id"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:thumb="@drawable/ic_recycle"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter Dustbin Id"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ET_Bin_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:focusable="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/BT_Select_Loc_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Location"
+                android:drawableRight="@drawable/ic_loc"
+                android:drawableTint="@color/white"
+                android:padding="25dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="20dp"/>
+
+
+        </LinearLayout>
+
+</LinearLayout>

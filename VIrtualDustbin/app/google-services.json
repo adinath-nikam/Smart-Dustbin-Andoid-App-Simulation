@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597653658907",
+    "project_id": "hackathon-smart-dustbin",
+    "storage_bucket": "hackathon-smart-dustbin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597653658907:android:1a585f6239cd66070c07be",
+        "android_client_info": {
+          "package_name": "com.example.virtualdustbin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597653658907-24j28fk72f5nolh2vlsrlurnngls3fej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn6oHkQe9y19sOkLmZkLJZNuEr62yFFAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597653658907-24j28fk72f5nolh2vlsrlurnngls3fej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

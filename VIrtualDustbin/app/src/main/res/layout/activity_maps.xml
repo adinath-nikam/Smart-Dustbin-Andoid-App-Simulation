@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Maps">
+
+    <include
+        android:id="@+id/TB_Maps_Id"
+        layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragment_mapview_id"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/BT_Select_Loc_Id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:drawableTint="@color/white"
+            android:padding="25dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"/>
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
